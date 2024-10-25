@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor de Clima e Hora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="icons/css/weather-icons.min.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="main-content">
+        <div class="clock-container">
+            <h1 id="local-time">00:00:00</h1>
+            <p id="time-zone">UTC</p>
+        </div>
+        <div class="weather-container">
+            <h1>Medidor de Temperatura e Umidade</h1>
+            <input type="text" id="city-input" placeholder="Digite o nome da cidade">
+            <button id="search-button">Buscar</button>
+            <div class="weather-info">
+                <p id="temperature"></p>
+                <p id="humidity"></p>
+                <i id="weather-icon" class="wi"></i>
+            </div>
+            <div class="forecast">
+                <h2>Previsão para Amanhã</h2>
+                <p id="forecast-temperature"></p>
+                <p id="forecast-humidity"></p>
+                <i id="forecast-icon" class="wi"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
